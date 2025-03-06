@@ -1,6 +1,4 @@
 package com.BridgeLabz.AddressBook.App.DTO;
-
-
 import lombok.Data;
 
 @Data
