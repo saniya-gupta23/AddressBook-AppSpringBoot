@@ -1,0 +1,61 @@
+2025-03-08 11:33:09 [restartedMain] INFO  c.B.A.App.AddressBookAppApplication - Starting AddressBookAppApplication using Java 21.0.5 with PID 32316 (C:\Users\nomic\OneDrive\Desktop\Documents\CapgeminiTraining\AddressBook-App\target\classes started by nomic in C:\Users\nomic\OneDrive\Desktop\Documents\CapgeminiTraining\AddressBook-App)
+2025-03-08 11:33:09 [restartedMain] DEBUG c.B.A.App.AddressBookAppApplication - Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-08 11:33:09 [restartedMain] INFO  c.B.A.App.AddressBookAppApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-08 11:33:09 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-08 11:33:09 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-08 11:33:11 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-08 11:33:11 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 0 JPA repository interfaces.
+2025-03-08 11:33:12 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-08 11:33:12 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-08 11:33:12 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-08 11:33:12 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-08 11:33:12 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2607 ms
+2025-03-08 11:33:12 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-08 11:33:12 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-08 11:33:12 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-03-08 11:33:13 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-08 11:33:13 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-08 11:33:14 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2ff499fb
+2025-03-08 11:33:14 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-08 11:33:14 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-08 11:33:14 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-08 11:33:14 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-08 11:33:15 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-08 11:33:15 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-08 11:33:15 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-08 11:33:16 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-03-08 11:33:16 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-08 11:33:16 [restartedMain] INFO  c.B.A.App.AddressBookAppApplication - Started AddressBookAppApplication in 7.815 seconds (process running for 8.726)
+2025-03-08 11:35:13 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-08 11:35:13 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-08 11:35:13 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 117 ms
+2025-03-08 11:35:14 [http-nio-8080-exec-2] INFO  c.B.A.A.C.AddressBookController - Received request to add new contact: AddressBookDTO(name=Nomicy, phone=9876543211, address=456 Elm St)
+2025-03-08 11:35:14 [http-nio-8080-exec-2] INFO  c.B.A.App.Service.AddressBookService - Adding new contact: AddressBookDTO(name=Nomicy, phone=9876543211, address=456 Elm St)
+2025-03-08 11:35:14 [http-nio-8080-exec-2] DEBUG c.B.A.App.Service.AddressBookService - Contact added successfully: AddressBook(id=1, name=Nomicy, phone=9876543211, address=456 Elm St)
+2025-03-08 11:35:14 [http-nio-8080-exec-2] DEBUG c.B.A.A.C.AddressBookController - Contact added successfully: AddressBook(id=1, name=Nomicy, phone=9876543211, address=456 Elm St)
+2025-03-08 11:35:23 [http-nio-8080-exec-5] INFO  c.B.A.A.C.AddressBookController - Received request to delete contact with ID: 1
+2025-03-08 11:35:23 [http-nio-8080-exec-5] WARN  c.B.A.App.Service.AddressBookService - Deleting contact with ID: 1
+2025-03-08 11:35:23 [http-nio-8080-exec-5] INFO  c.B.A.App.Service.AddressBookService - Contact with ID 1 deleted successfully
+2025-03-08 11:35:23 [http-nio-8080-exec-5] INFO  c.B.A.A.C.AddressBookController - Contact with ID 1 deleted successfully
+2025-03-08 11:35:29 [http-nio-8080-exec-6] INFO  c.B.A.A.C.AddressBookController - Received request to fetch all contacts
+2025-03-08 11:35:29 [http-nio-8080-exec-6] INFO  c.B.A.App.Service.AddressBookService - Fetching all contacts
+2025-03-08 11:35:29 [http-nio-8080-exec-6] DEBUG c.B.A.A.C.AddressBookController - Returning 0 contacts
+2025-03-08 11:35:33 [http-nio-8080-exec-3] INFO  c.B.A.A.C.AddressBookController - Received request to add new contact: AddressBookDTO(name=Nomicy, phone=9876543211, address=456 Elm St)
+2025-03-08 11:35:33 [http-nio-8080-exec-3] INFO  c.B.A.App.Service.AddressBookService - Adding new contact: AddressBookDTO(name=Nomicy, phone=9876543211, address=456 Elm St)
+2025-03-08 11:35:33 [http-nio-8080-exec-3] DEBUG c.B.A.App.Service.AddressBookService - Contact added successfully: AddressBook(id=2, name=Nomicy, phone=9876543211, address=456 Elm St)
+2025-03-08 11:35:33 [http-nio-8080-exec-3] DEBUG c.B.A.A.C.AddressBookController - Contact added successfully: AddressBook(id=2, name=Nomicy, phone=9876543211, address=456 Elm St)
+2025-03-08 11:35:40 [http-nio-8080-exec-4] INFO  c.B.A.A.C.AddressBookController - Received request to fetch all contacts
+2025-03-08 11:35:40 [http-nio-8080-exec-4] INFO  c.B.A.App.Service.AddressBookService - Fetching all contacts
+2025-03-08 11:35:40 [http-nio-8080-exec-4] DEBUG c.B.A.A.C.AddressBookController - Returning 1 contacts
+2025-03-08 11:41:42 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-08 11:41:42 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-08 11:41:42 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-08 11:41:42 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-08 11:41:42 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
