@@ -2,6 +2,7 @@ package com.BridgeLabz.AddressBook.App.Service;
 
 import com.BridgeLabz.AddressBook.App.Entity.AddressBook;
 import com.BridgeLabz.AddressBook.App.DTO.AddressBookDTO;
+import com.BridgeLabz.AddressBook.App.Exception.AddressBookException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -21,11 +22,12 @@ public class AddressBookService {
         return contactList;
     }
 
+
     public Optional<AddressBook> getContactById(int id) {
-        log.info("Fetching contact with ID: {}", id);
-        return contactList.stream()
+        return Optional.ofNullable(contactList.stream()
                 .filter(c -> c.getId() == id)
-                .findFirst();
+                .findFirst()
+                .orElseThrow(() -> new AddressBookException("Employee with" + id + " not found")));
     }
 
     public AddressBook addContact(AddressBookDTO addressBookDTO) {
