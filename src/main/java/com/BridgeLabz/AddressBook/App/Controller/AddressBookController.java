@@ -17,13 +17,11 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/addressbook")
-@Slf4j  // Lombok annotation for logging
+@Slf4j
 public class AddressBookController {
 
     @Autowired
-
     private IAddressBookService addressBookService;
-
 
     @GetMapping
     public ResponseEntity<List<AddressBook>> getAllContacts() {
