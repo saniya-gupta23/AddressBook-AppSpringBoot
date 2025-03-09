@@ -6,14 +6,14 @@ import com.BridgeLabz.AddressBook.App.Exception.AddressBookException;
 import com.BridgeLabz.AddressBook.App.Repository.AddressBookRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import com.BridgeLabz.AddressBook.App.Interfaces.IAddressBookService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
-@Slf4j  // Lombok annotation for logging
-public class AddressBookService {
+public class AddressBookService implements IAddressBookService {
 
     @Autowired
     private AddressBookRepository addressBookRepository;
@@ -35,6 +35,7 @@ public class AddressBookService {
     public AddressBook addContact(AddressBookDTO addressBookDTO) {
         log.info("Adding new contact: {}", addressBookDTO);
         AddressBook contact = new AddressBook();
+        contact.setId(idCounter++);
         contact.setName(addressBookDTO.getName());
         contact.setPhone(addressBookDTO.getPhone());
         contact.setAddress(addressBookDTO.getAddress());
