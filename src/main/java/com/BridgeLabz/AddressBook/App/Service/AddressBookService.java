@@ -2,6 +2,7 @@ package com.BridgeLabz.AddressBook.App.Service;
 
 import com.BridgeLabz.AddressBook.App.Entity.AddressBook;
 import com.BridgeLabz.AddressBook.App.DTO.AddressBookDTO;
+import com.BridgeLabz.AddressBook.App.Interfaces.IAddressBookService;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -9,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class AddressBookService {
+public class AddressBookService implements IAddressBookService {
 
     private final List<AddressBook> contactList = new ArrayList<>();
     private int idCounter = 1;
