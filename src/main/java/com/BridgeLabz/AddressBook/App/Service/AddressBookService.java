@@ -6,16 +6,12 @@ import com.BridgeLabz.AddressBook.App.Interfaces.IAddressBookService;
 import com.BridgeLabz.AddressBook.App.Repository.AddressBookRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.BridgeLabz.AddressBook.App.Interfaces.IAddressBookService;
 import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
 @Service
-<<<<<<< HEAD
-=======
 @Slf4j
->>>>>>> UC8_RepositoryLayer_SaveToSQL
 public class AddressBookService implements IAddressBookService {
 
     @Autowired
@@ -34,7 +30,6 @@ public class AddressBookService implements IAddressBookService {
     @Override
     public AddressBook addContact(AddressBookDTO addressBookDTO) {
         AddressBook contact = new AddressBook();
-        contact.setId(idCounter++);
         contact.setName(addressBookDTO.getName());
         contact.setPhone(addressBookDTO.getPhone());
         contact.setAddress(addressBookDTO.getAddress());
