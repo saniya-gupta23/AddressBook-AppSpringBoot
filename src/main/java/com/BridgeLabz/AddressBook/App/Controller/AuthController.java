@@ -36,15 +36,26 @@ public class AuthController {
     }
 
     @PostMapping(value = "/login", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<LoginResponseDTO> loginUser(@RequestBody LoginRequestDTO loginRequestDTO) {
+    public ResponseEntity<LoginResponseDTO> loginUser(@RequestBody LoginRequestDTO loginRequestDTO) throws MessagingException {
         System.out.println("Login request received: " + loginRequestDTO.getEmail());
 
         LoginResponseDTO response = authService.loginUser(loginRequestDTO);
 
         System.out.println("Login response: " + response); // Debugging
-        emailService.sendLoginAlertEmail(loginRequestDTO.getEmail());
+//        emailService.sendLoginAlertEmail(loginRequestDTO.getEmail());
 
         return ResponseEntity.ok(response);
+    }
+    @PostMapping("/login-with-token")
+    public ResponseEntity<?> loginWithToken(@RequestHeader("Authorization") String token) {
+        try {
+            if (authService.loginWithToken(token.replace("Bearer ", ""))) {
+                return ResponseEntity.ok("Login successful with token.");
+            }
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Unauthorized.");
+        } catch (IllegalArgumentException | MessagingException e) {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(e.getMessage());
+        }
     }
 
     @PutMapping("/forgotPassword")
