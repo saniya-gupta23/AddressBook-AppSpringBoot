@@ -1,4 +1,4 @@
-package com.BridgeLabz.AddressBook.App.Config;
+package com.BridgeLabz.AddressBook.App.Security;
 
 import org.springframework.amqp.core.Queue;
 import org.springframework.context.annotation.Bean;
